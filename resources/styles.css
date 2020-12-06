@@ -1,5 +1,6 @@
 /* UNIVERSAL */
-html {
+body {
+    margin: 0;
     font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
     color: seashell;
@@ -8,15 +9,24 @@ html {
     text-align: center;
 }
 
+a {
+    color: seashell;
+}
+
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+}
+
 main {
     position: relative;
-    top: 2rem;
+    padding-top: 2rem;
 }
 
 .container {
     display: flex;
-    flex-flow: column wrap;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -37,14 +47,16 @@ header {
 header img {
     height: 50px;
     width: auto;
-    border: 1px yellow solid;
+    padding-left: 10px;
 }
 
+nav {
+    padding-right: 10px;
+}
 
 nav li {
     text-align: right;
     display: inline;
-    border: 1px red solid;
     text-decoration: underline;
 }
 
@@ -61,4 +73,39 @@ div.banner {
 .banner .container {
     background-color: black;
     width: 100%;
+    flex-flow: column wrap;
+}
+
+/* TEA OF THE MONTH */
+.galleryitem {
+    padding: 10px;
+}
+
+.galleryitem img{
+    height: 200px;
+    width: 300px;
+}
+
+/* LOCATIONS */
+div.locations {
+    width: 1200px;
+    height: 500px;
+    background-image: url('./images/img-locations-background.jpg');
+    background-size: cover;
+    display: flex;
+    margin: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
