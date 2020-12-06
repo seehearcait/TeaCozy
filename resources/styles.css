@@ -1,6 +1,6 @@
 /* UNIVERSAL */
 body {
-    margin: 0;
+    /* margin: 0; */
     font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
     color: seashell;
@@ -77,6 +77,10 @@ div.banner {
 }
 
 /* TEA OF THE MONTH */
+div.teaofmonth{
+    padding-top: 2rem;
+}
+
 .galleryitem {
     padding: 10px;
 }
@@ -108,4 +112,14 @@ div.locations {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* FOOTER */
+.footerinfo {
+    height: 200px;
+}
+
+#copyright {
+    text-align: left;
+    padding-left: 20px;
 }
